@@ -74,6 +74,8 @@ Developed an exam portal with distinct admin and user roles using Spring Boot an
 2. The frontend interacts with the backend APIs hosted at http://localhost:8080.
 3. Perform different operations on Exam Edge UI..
 
+## Note: All the Images/Assets are attached in the UI repo
+
 ## ScreenShots
 ![image](https://github.com/user-attachments/assets/b53abc73-1021-4742-a99f-fba12bb1fdcb)
 ![image](https://github.com/user-attachments/assets/05d2416c-d61d-4672-9943-17b854efd2a8)
