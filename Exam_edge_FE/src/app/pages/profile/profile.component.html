@@ -1,0 +1,49 @@
+<div style="margin-top: 66px;">
+  <button appBackButton mat-raised-button color="accent" class="mb20">
+    Back !
+</button>
+</div>
+            <mat-card >
+                <div class="mt20 ml20" style="margin-top: 50px;">
+                  <h1>Profile Details:</h1>
+                </div>
+                <mat-card-content>
+                  <div class="container">
+                    <div class="container text-center">
+                      <img src="../../../assets/profile.png" height="100px" class="profile-image">
+                      <h1 class="mt20">{{ user.firstname }} {{ user.lastname }}</h1>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-10 offset-md-1">
+                        <table class="table text-center">
+                          <tr>
+                            <td>Username</td>
+                            <td>{{ user.username }}</td>
+                          </tr>
+                          <tr>
+                            <td>User Id</td>
+                            <td>{{ user.id }}</td>
+                          </tr>
+                          <tr>
+                            <td>Phone No</td>
+                            <td>{{ user.phone }}</td>
+                          </tr>
+                          <tr>
+                            <td>Email</td>
+                            <td>{{ user.email }}</td>
+                          </tr>
+                          <!-- <tr>
+                            <td>Role</td>
+                            <td>{{ role.roleName }}</td>
+                          </tr> -->
+                          <tr>
+                            <td>Status</td>
+                            <td>{{ user.enabled ? "ACTIVE" : "NOT ACTIVE" }}</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </mat-card-content>
+              </mat-card>
+              <!-- {{user|json}} -->

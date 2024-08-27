@@ -1,0 +1,47 @@
+
+<div class="mt20 ml20" style="margin-top: 100px;">
+    <button appBackButton mat-raised-button color="accent" class="mb20">
+        Back !
+    </button>
+    <button [routerLink]="'/adminWelcome'" mat-raised-button color="accent" class="mb20 ml20">
+        Home
+    </button>
+    <h1>Categories</h1>
+</div>
+<mat-card class="mt20" *ngFor="let c of categories">
+
+    <mat-card-header>
+
+        <mat-card-title>
+            <mat-icon mat-list-icon>category</mat-icon>
+            {{c.title}}
+
+        </mat-card-title>
+
+    </mat-card-header>
+
+    <mat-card-content>
+        <p [innerHTML]="c.description"></p>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button [routerLink]="'/viewquizzes/' + c.catid" mat-raised-button color="primary">Quizzes</button>
+
+        <button [routerLink]="'/updatecategory/' + c.catid" mat-flat-button color="primary" class="ml20">Update</button>
+        <button (click)="deleteCategory(c.catid)" mat-flat-button color="accent" class="ml20">Delete</button>
+    </mat-card-actions>
+
+</mat-card>
+
+<div class="col-md-12" *ngIf="categories.length == 0">
+    <mat-card>
+        <mat-card-content>
+            <h1>There is not any Category created</h1>
+        </mat-card-content>
+    </mat-card>
+    <br>
+</div>
+
+<div class="container text-center mt20">
+    <button mat-raised-button color="primary" [routerLink]="'/addcategory'">Add New Category</button>
+</div>

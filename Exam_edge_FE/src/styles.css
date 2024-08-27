@@ -1,0 +1,161 @@
+
+/* You can add global styles to this file, and also import other style files */
+/**/
+.login {
+    position: absolute;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #2c9caf;
+    transition: all 1000ms;
+    font-size: 15px;
+    /* position: relative; */
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+    top: 40%;
+    right: 20%;
+    
+  }
+  
+  .login:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+  }
+  
+  .login::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .login:hover::before {
+    width: 250%;
+  }
+  
+  .reg {
+    position: absolute;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fdfdfd;
+    background-color:#2c9caf;
+    transition: all 1000ms;
+    font-size: 15px;
+    /* position: relative; */
+    overflow: hidden;
+    outline: 2px solid #ffffff;
+    top: 50%;
+    right: 20%;
+    
+  }
+  
+  .reg:hover {
+    color: #00aeff;
+    transform: scale(1.1);
+    outline: 2px solid #555e5f;
+    box-shadow: 4px 5px 17px -4px #000000;
+  }
+  
+  .reg::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .reg:hover::before {
+    width: 250%;
+  }
+  
+/* Dark and Light Theme */
+
+html, body { height: 100%; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background: #f5f5f5 ;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+
+.ml20{
+    margin-left: 20px;
+
+}
+
+.mr20{
+    margin-right: 20px;
+
+}
+
+.mb20{
+    margin-bottom: 20px;
+
+}
+
+.mt10{
+    margin-top: 10px;
+}
+
+.ml10{
+    margin-left: 10px;
+
+}
+
+.mr10{
+    margin-right: 10px;
+
+}
+
+.mb10{
+    margin-bottom: 10px;
+
+}
+
+.mr30{
+    margin-right: 30px;
+
+}
+
+.mr60{
+    margin-right: 60px;
+
+}
+
+.mr170{
+    margin-right: 170px;
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,33 @@
+<mat-toolbar style="background-image:linear-gradient( to right,#c765b0, #0051ff, #00ffd5,#5bc5df); position: fixed; top: 0; left: 0; right: 0; z-index: 1000; ">
+  <a [routerLink]="'/adminWelcome'" mat-button>
+    <img src="../../../assets/exam.png" height="60px">
+  </a>
+
+  <a *ngIf="!loggedIn" [routerLink]="'/adminWelcome'"
+    style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" mat-icon-button>
+    Exam-Edge
+  </a>
+
+  <a *ngIf="loggedIn" [routerLink]="'/adminWelcome'"
+    style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" mat-icon-button>
+    Exam-Edge 
+  </a>
+
+  <span class="example-spacer"></span>
+
+  <!-- <a *ngIf="!loggedIn" [routerLink]="'/login'" mat-icon-button class="example-icon mr30 ">
+    Login
+  </a>
+
+  <a *ngIf="!loggedIn" [routerLink]="'/signup'" mat-icon-button class="example-icon mr60">
+    Register
+  </a> -->
+
+  <a *ngIf="loggedIn" [routerLink]="'/profile'" mat-icon-button class="example-icon mr170">
+    Welcome {{ user.username }}
+  </a>
+
+  <a *ngIf="loggedIn"  mat-icon-button class="example-icon mr60"> <!--(click)="logoutUser()"-->
+    Logout
+  </a>
+</mat-toolbar>

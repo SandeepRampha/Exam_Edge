@@ -1,0 +1,35 @@
+<mat-card style="margin-top: 66px;">
+    <mat-action-list>
+
+        <div mat-subheader>Menu</div>
+        <button mat-list-item  routerLink="/userWelcome{{id}}">
+            <mat-icon mat-list-icon>home</mat-icon>Home
+        </button>
+
+        <button mat-list-item routerLink="/profile/{{id}}">
+            <mat-icon mat-list-icon>account_circle</mat-icon>Profile
+        </button>
+
+
+        <button mat-list-item [routerLink]="'/loadquiz/0'">
+            <mat-icon mat-list-icon >quiz</mat-icon>All Quizzes
+        </button>
+
+        <div mat-subheader> <mat-icon mat-list-icon>category</mat-icon> Quiz Category</div>
+        <mat-action-list *ngFor="let c of categories">
+            <button [routerLink]="'/loadquiz/'+c.catid">
+                <mat-icon mat-list-icon>open_in_new</mat-icon>{{c.title}}
+            </button>
+        </mat-action-list>
+
+        
+        <!-- <button mat-list-item  [routerLink]="'/userdashboard/loadallresults'">
+            <mat-icon mat-list-icon>report</mat-icon>Results
+        </button> -->
+        
+        <button mat-list-item [routerLink]="'/login'">
+            <mat-icon mat-list-icon>logout</mat-icon>Logout
+        </button>
+
+    </mat-action-list>
+</mat-card>
